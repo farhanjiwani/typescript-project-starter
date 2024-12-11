@@ -1,0 +1,33 @@
+{
+  "name": "typescript-project-starter",
+  "version": "0.0.1",
+  "description": "A TS project starter w/ SASS and Webpack Server",
+  "private": true,
+  "keywords": [
+    "typescript",
+    "javascript",
+    "sass",
+    "frontend"
+  ],
+  "license": "ISC",
+  "author": "Farhan 'AlfaTrion' Jiwani <farhan@farhanjiwani.com>",
+  "engines": {
+    "node": ">=18.20.0",
+    "npm": ">=10.8.3"
+  },
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open --config webpack.config.dev.js",
+    "start:open": "webpack serve --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.prod.js"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^5.10.0"
+  }
+}
