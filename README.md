@@ -22,7 +22,4 @@
 
 * there is a FOUC
   * try to use the CSS extract plugin
-* add linters
-  * js/ts
-  * css/sass
 * add testing suite
