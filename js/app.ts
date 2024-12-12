@@ -1,3 +1,5 @@
+import "../styles/main";
+
 (function () {
   "use strict";
 

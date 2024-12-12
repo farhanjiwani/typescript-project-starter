@@ -1,0 +1,15 @@
+@forward "./reset.css";
+@forward "./utils/sr-only";
+
+:root {
+  --copy-color: #333;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: sans-serif;
+}
