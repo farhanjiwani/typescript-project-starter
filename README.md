@@ -26,7 +26,6 @@
 
 * There is a FOUC
   * Try to use the CSS extract plugin
-* Move source files to a `src` directory
 * Make sure `LICENSE.txt` is actually the one listed in `package.json`
 
 ## `npm` Scripts

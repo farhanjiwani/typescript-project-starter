@@ -1,4 +1,6 @@
+const path = require("path");
 const { merge } = require("webpack-merge");
+const CopyPlugin = require("copy-webpack-plugin");
 const common = require("./webpack.common.js");
 
 module.exports = merge(common, {
@@ -10,6 +12,22 @@ module.exports = merge(common, {
   devServer: {
     liveReload: true,
     hot: true,
-    static: ["./"],
+    client: {
+      progress: true,
+    },
+    static: {
+      directory: path.join(__dirname, "src/static"),
+      publicPath: "/",
+    },
   },
+  plugins: [
+    new CopyPlugin({
+      patterns: [
+        {
+          from: "index.html",
+          to: ".",
+        },
+      ],
+    }),
+  ],
 });
